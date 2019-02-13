@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7259" started-at="2019-01-16T02:52:44Z" finished-at="2019-01-16T02:52:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7259" started-at="2019-01-16T02:52:44Z" finished-at="2019-01-16T02:52:51Z">
+      <class name="HeadlessUnitBrowser">
+        <test-method status="PASS" signature="createAllKindOffile()[pri:0, instance:HeadlessUnitBrowser@482f8f11]" name="createAllKindOffile" duration-ms="16" started-at="2019-01-15T21:52:44Z" finished-at="2019-01-15T21:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAllKindOffile -->
+        <test-method status="PASS" signature="create_txtfile()[pri:0, instance:HeadlessUnitBrowser@482f8f11]" name="create_txtfile" duration-ms="0" started-at="2019-01-15T21:52:44Z" finished-at="2019-01-15T21:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_txtfile -->
+        <test-method status="PASS" signature="createfileAndWrite()[pri:0, instance:HeadlessUnitBrowser@482f8f11]" name="createfileAndWrite" duration-ms="0" started-at="2019-01-15T21:52:44Z" finished-at="2019-01-15T21:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createfileAndWrite -->
+        <test-method status="FAIL" signature="m1()[pri:0, instance:HeadlessUnitBrowser@482f8f11]" name="m1" duration-ms="7196" started-at="2019-01-15T21:52:44Z" finished-at="2019-01-15T21:52:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element with ID: ''
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'ZAFIRAHI5', ip: '192.168.86.73', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: driver.version: HtmlUnitDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element with ID: ''
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'ZAFIRAHI5', ip: '192.168.86.73', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementById(HtmlUnitDriver.java:1236)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2005)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2001)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1627)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:2001)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:778)
+	at HeadlessUnitBrowser.m1(HeadlessUnitBrowser.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+      </class> <!-- HeadlessUnitBrowser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
